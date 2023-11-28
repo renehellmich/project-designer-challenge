@@ -1,0 +1,145 @@
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 2.85rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .img__fixed {
+        position: fixed;
+        height: 32px;
+        width: 32px;
+        left: 8px;
+        top: 32px;
+    }
+    .div__header {
+        position: absolute;
+        top: 32px;
+        left: 48px;
+    }
+    .div__illustration img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 540px;
+        width: 35vw
+    }
+    .div__start {
+        position: absolute;
+        max-width: 400px;
+        width: 85vw;
+        height: 320px;
+        top: 160px;
+        left: calc(10vw);
+        margin: 0 auto;
+    }
+
+    .sc__overview {
+        margin-bottom: 64px;
+    }
+    .sc__info {
+        margin: 0 32px 64px 32px;
+    }
+    .div__info {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        flex-wrap:nowrap;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+    .div__info h2 {
+        width: 320px;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    .div__info p {
+        min-width: 360px;
+        width: calc(90vw - 2 * 32px);
+    }
+    .sc__info h2:nth-child(2) {
+        width: calc(60vw);
+        margin: 0 auto;
+        margin-bottom: 88px;
+    }
+
+    .article__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .sc__points {
+        margin: 0 32px 160px 32px;
+    }
+    .div__außen {
+        display: flex;
+        min-width: calc(320px - 2 * 32px);
+        max-width: 720px;
+        width: calc(100vw - 4 * 32px);
+    }
+    .div__points-intro {
+        max-width: 560px;
+        width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .article__points {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "div_img1"
+        "div_txt1"
+        "div_img2"
+        "div_txt2"
+        "div_img3"
+        "div_txt3"
+        "div_img4"
+        "div_txt4";
+        justify-content: center;
+        gap: 64px;
+        flex-wrap: wrap;
+        max-width: calc(32px + 2 * 660px);
+        width: calc(100vw - 32px - 2 * 32px);
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .div__points {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:16px;
+        min-width: 360px;
+        max-width: 660px;
+        width: calc(100vw/2 - 2 * 32px);
+        margin: 0 auto;
+    }
+    .sc__subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        margin: 0 auto;
+    }
+
+    form input {
+        max-width: 480px;
+        width: 100vw;
+        height: 48px;
+        border-radius: 4px;
+        border: none;
+        text-align: center;
+        background-color: var(--color-input);
+    }
+}
