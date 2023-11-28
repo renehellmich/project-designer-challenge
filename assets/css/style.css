@@ -156,7 +156,7 @@ header {
 .div__info {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:center;
     flex-wrap: wrap;
     margin-bottom: 160px;
 }
@@ -169,7 +169,8 @@ header {
     height: 48px;
 }
 .div__info p {
-    min-width: 560px;
+    min-width: 460px;
+    max-width: 760px;
     width: 50vw;
 }
 
@@ -211,6 +212,7 @@ header {
 
 .sc__points {
     margin: 0 var(--margin-info) 160px var(--margin-info);
+
 }
 .div__points-intro {
     width: 560px;
@@ -225,17 +227,38 @@ header {
 }
 
 .article__points {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 32px;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "div_img1 div_txt1"
+    "div_txt2 div_img2"
+    "div_img3 div_txt3"
+    "div_txt4 div_img4";
+    justify-content: center;
+    gap: 32px;
     flex-wrap: wrap;
+    max-width: calc(32px + 2 * 660px);
+    width: calc(100vw - 32 - 2 * var(--margin-info));
+    margin: 0 auto;
+    justify-content: center;
+}
+.article__points:nth-of-type(even){
+    margin-left: auto;
+}
+.article__points:nth-of-type(odd){
+    margin-right: auto;
 }
 .div__points {
     display: flex;
     flex-direction: column;
     gap:16px;
     min-width: 360px;
+    max-width: 660px;
     width: calc(100vw/2 - 2 * var(--margin-info));
 }
 .img__number {
