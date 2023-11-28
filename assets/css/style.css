@@ -44,3 +44,59 @@ h3 {
     font-family: Arial;
     font-size: 1.25rem;
 }
+a{
+    font-family: 'Roboto_Bold';
+    font-size: 0.875rem;
+    text-decoration: none;
+    color:var(--color-a);
+}
+
+/* ! Abschluss Konfiguration */
+/* * Start Header */
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 480px;
+}
+
+.div__header {
+    position: absolute;
+    top: 32px;
+    left: 64px;
+}
+.img__fixed {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    left: 16px;
+    top: 32px;
+}
+.div__header p:nth-child(1) {
+    font-size: 1.5rem;
+    font-family: 'Roboto_Bold';
+}
+.div__illustration img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 540px;
+    width: 50vw
+}
+.div__start {
+    position: absolute;
+    width: 480px;
+    height: 320px;
+    top: 160px;
+    left: 88px;
+}
+.div__start h1 {
+    margin-bottom: 16px;
+}
+.div__start p {
+    margin-bottom: 32px;
+}
+
+/* ! Header completed */
+/* * Start Main */
+
