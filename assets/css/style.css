@@ -1,5 +1,46 @@
+@font-face {
+    font-family: 'Roboto_Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Roboto_Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --color-head: #0b0c17;
+    --color-p: black;
+    --color-a: #ff3571;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Roboto_Bold';
+    font-size: 3.375rem;
+}
+
+h2{
+    font-family: 'Roboto_Bold';
+    font-size: 2.375rem;
+}
+h3 {
+    font-family: 'Roboto_Bold';
+    font-size: 1.125rem;
+}
+.h3__28pt {
+    font-family: 'Roboto_Bold';
+    font-size: 1.75rem;
+}
+.button {
+    font-family: Arial;
+    font-size: 1.25rem;
 }
